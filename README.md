@@ -1,9 +1,9 @@
-# TesteGit
-readme ponto com ponto br
-teste git + vscode (conta linkada automatizado)
+# Projetinho 1 - Engenharia de Software II;
 
-manual vai ficar pra outro dia!!!!!!
 
 ---
 
-# Aquele Teste sinistrão 
+Autores
+- Vinicius Pedro
+- Lucas Tetzlaff
+- Thales Castro
