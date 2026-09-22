@@ -18,6 +18,7 @@ $conexao->set_charset("utf8mb4");
 $conexao->close();
 header("Location: index.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
