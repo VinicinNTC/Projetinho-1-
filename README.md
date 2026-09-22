@@ -1,5 +1,3 @@
-# Projetinho 1 - Engenharia de Software II
-
 # TesteGit
 readme ponto com ponto br
 
