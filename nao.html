@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible"
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"
     content="IE=edge">
-    <title> Cadastro Produtos</title>
-=======
-    <title> cadProduto' </title>
->>>>>>> origin/main:index.html
+	<title>Cad. Produtos</title>
+
+	<link rel="stylesheet" href="estilo.css">
+
 </head>
+<body>
+	<main class="card">
+		<h1>Cadastro de Produto</h1>
+		<p class="subtitle">Preencha os dados do novo produto.</p>
 
-<body 
-style="background-color: bisque;">
-    
-    <h1 style="text-align: center;
-     color: rgb(59, 55, 48);
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     "> Testando GutHib Lindamente (u dont spelled wrong)</h1>
+		<form action="cadastrar.php" method="post">
 
-    <p style="text-align: center; display: flex; justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    cursor: pointer;"> Click this Button below!</p>
 
-    <div style="display: flex; justify-content: center; align-items: center; min-height: 20vh;">
-        <button
-            style="font-family: 'Times New Roman', Times, serif; cursor: pointer;"
-            onclick="alert('Botão funcionando!')">
-            PRESS ME
-        </button>
-    </div>
+			<div class="campo">
+				<label for="nome">Nome do produto</label>
+				<input type="text" id="nome" name="nome" placeholder="ex: Brinco Prata" required>
+			</div>
 
-    <a href="teste.php">
-        <div style="display: flex; justify-content: center; align-items: center; min-height: 20vh;">
-            <button style="font-family: 'Times New Roman', Times, serif;"> Go to teste.php</button>
-        </div>
-    </a>
-    
-    <h2 style="text-align: center; display: flex; justify-content: center;
-    font-family: Arial, sans-serif;
-    color:rgb(221, 85, 43)"> Aqui que tem brincadeiras? </h2>
+			<div class="campo">
+				<label for="descricao">Descrição</label>
+				<textarea id="descricao" name="descricao" placeholder="Descreva o produto"></textarea>
+			</div>
 
+			<div class="linha">
+				<div class="campo">
+					<label for="preco">Preço (R$)</label>
+					<input type="number" id="preco" name="preco" min="0" step="0.01" placeholder="0,00" required>
+				</div>
+				<div class="campo">
+					<label for="estoque">Quantidade em estoque</label>
+					<input type="number" id="qtd_estoque" name="estoque" min="0" step="1" placeholder="0" required>
+				</div>
+			</div>
+
+			<div class="campo">
+				<label for="categoria">Categoria</label>
+				<select id="categoria" name="categoria" required>
+					<option value="">Selecione uma categoria</option>
+					<option value="alianca">Aliança</option>
+					<option value="brinco">Brinco</option>
+					<option value="ouro">Ouro</option>
+					<option value="prata">Prata</option>
+					<option value="outros">Outros</option>
+				</select>
+			</div>
+
+			<button type="submit">Cadastrar produto</button>
+		</form>
+	</main>
 </body>
 </html>

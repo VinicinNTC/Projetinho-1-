@@ -31,16 +31,19 @@
 			font: inherit;
 		}
 		textarea { min-height: 100px; resize: vertical; }
-		.linha { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+		.linha { display: flex;gap: 16px; flex-wrap: wrap; }
+
+		.linha .campo { flex: 1; min-width: 120px; }
 		button {
+			margin-top: 12px;
 			width: 100%;
 			padding: 12px;
 			border: 0;
 			border-radius: 6px;
-			background: #3f9b9e;
+			background: #883f9e;
 			color: #fff;
 			font-size: 16px;
 			cursor: pointer;
 		}
-		button:hover { background: #1dd890; }
+		button:hover { background: #3c0c69; }
 		@media (max-width: 480px) { .linha { grid-template-columns: 1fr; gap: 0; } }
